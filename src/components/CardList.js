@@ -386,7 +386,7 @@ const CardList = () => {
     ]);
 
     return (
-        <div>
+        <div className="cards-container">
             {cards.map(card => (
                 <Card 
                     key={card.id} 

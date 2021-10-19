@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-color: steelblue;
+  min-height: 100vh;
+  color: white;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -7,4 +12,39 @@ img {
   width: 72px;
   height: 112px;
   margin-bottom: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+img:hover {
+  box-shadow: 0 0 15px rgba(6, 12, 41, 0.3);
+}
+
+h1 {
+  margin-bottom: 58px;
+}
+
+.cards-container::before {
+  content: '';
+  width: 842px;
+  height: 844px;
+  border-radius: 8px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -1;
+  mix-blend-mode: overlay;
+}
+
+.cards-container {
+  z-index: 10;
+  position: relative;
+  margin: auto;
+  padding: 26px 17px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 842px;
+  height: 844px;
 }
