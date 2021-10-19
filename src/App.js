@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
+import CardList from './components/CardList.js';
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <h1>memory concentration game</h1>
+      <h1>Memory</h1>
+      <CardList />
     </div>
   );
 }
